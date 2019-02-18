@@ -17,8 +17,8 @@ In order for Launch Daemons to function properly, place them in `/Library/Launch
 
 Run the following commands to enable/disable specific configurations:
 
-- Enable: `launchctl load -w /Library/LaunchDaemons/FILENAME.plist`
-- Disable: `launchctl unload -w /Library/LaunchDaemons/FILENAME.plist`
+- Enable - `launchctl load -w /Library/LaunchDaemons/FILENAME.plist`
+- Disable - `launchctl unload -w /Library/LaunchDaemons/FILENAME.plist`
 
 
 # Contributors
