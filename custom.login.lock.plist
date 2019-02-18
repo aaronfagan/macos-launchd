@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>AbandonProcessGroup</key>
+        <true/>
+        <key>Label</key>
+        <string>custom.login.lock</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession</string>
+            <string>-suspend</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+<!-- Logging
+        <key>StandardErrorPath</key>
+        <string>/var/log/custom.login.lock.log</string>
+        <key>StandardOutPath</key>
+        <string>/var/log/custom.login.lock.error.log</string>
+-->
+    </dict>
+</plist>

@@ -1,0 +1,11 @@
+.DS_Store
+server
+location
+*.crt
+*.csr
+*.key
+*.env
+*.conf
+*.ini
+*.htpasswd
+!*.example

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>AbandonProcessGroup</key>
+        <true/>
+        <key>Label</key>
+        <string>custom.nginx.reload.cron</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>nginx</string>
+            <string>-s</string>
+            <string>reload</string>
+        </array>
+        <dict>
+            <key>StartCalendarInterval</key>
+            <key>Hour</key>
+            <integer>4</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+<!-- Logging
+        <key>StandardErrorPath</key>
+        <string>/var/log/custom.nginx.reload.cron.log</string>
+        <key>StandardOutPath</key>
+        <string>/var/log/custom.nginx.reload.cron.log</string>
+-->
+    </dict>
+</plist>
