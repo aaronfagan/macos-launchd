@@ -1,7 +1,7 @@
 # MacOS LaunchAgents/LaunchDaemons
 
 ## LaunchAgents
-Launch Agents & Daemons run as specific users, after they have logged in.
+Launch Agents run as a specific users, after that user has logged in.
 
 In order for Launch Agents to function properly, place them in `~/Library/LaunchAgents`.
 
@@ -11,7 +11,7 @@ Run the following commands to enable/disable specific configurations:
 - Disable - `launchctl unload -w ~/Library/LaunchAgents/FILENAME.plist`
 
 ## LaunchDaemons
-Launch Daemons run while the system is booted. No user login required.
+Launch Daemons run as root. No user login is required.
 
 In order for Launch Daemons to function properly, place them in `/Library/LaunchDaemons`.
 
