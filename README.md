@@ -22,5 +22,4 @@ Run the following commands to enable/disable specific configurations:
 
 
 # Contributors
-
 * Aaron Fagan - [Github](https://github.com/aaronfagan), [Website](https://www.aaronfagan.ca/)
