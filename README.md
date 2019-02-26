@@ -20,6 +20,5 @@ Run the following commands to enable/disable specific configurations:
 - Enable - `launchctl load -w /Library/LaunchDaemons/FILENAME.plist`
 - Disable - `launchctl unload -w /Library/LaunchDaemons/FILENAME.plist`
 
-
 # Contributors
 * Aaron Fagan - [Github](https://github.com/aaronfagan), [Website](https://www.aaronfagan.ca/)
