@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>custom.scripts.cron.monthly</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>DIR_CRON</key>
+		<string>/path/to/scripts</string>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/find</string>
+		<string>$DIR_CRON</string>
+		<string>-path</string>
+		<string>$DIR_CRON/_*</string>
+		<string>-prune</string>
+		<string>-o</string>
+		<string>-path</string>
+		<string>$DIR_CRON/dev</string>
+		<string>-prune</string>
+		<string>-o</string>
+		<string>-type</string>
+		<string>f</string>
+		<string>! -iname</string>
+		<string>"_*.sh"</string>
+		<string>-iname</string>
+		<string>"*.sh"</string>
+		<string>-exec</string>
+		<string>chmod</string>
+		<string>+x</string>
+		<string>{}</string>
+		<string>\;</string>
+		<string>-exec</string>
+		<string>bash</string>
+		<string>{}</string>
+		<string>\;</string>
+	</array>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Day</key>
+		<integer>1</integer>
+		<key>Hour</key>
+		<integer>0</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+<!-- Logging
+        <key>StandardErrorPath</key>
+        <string>/var/log/custom.login.lock.log</string>
+        <key>StandardOutPath</key>
+        <string>/var/log/custom.login.lock.error.log</string>
+-->
+</dict>
+</plist>
