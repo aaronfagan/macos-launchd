@@ -38,8 +38,10 @@
 		<string>\;</string>
 	</array>
 	<key>StartCalendarInterval</key>
-	<array>
-		</dict>
+	<dict> 
+		<key>Minute</key>
+		<integer>*</integer>
+	</dict>
 	</array>
 <!-- Logging
         <key>StandardErrorPath</key>
