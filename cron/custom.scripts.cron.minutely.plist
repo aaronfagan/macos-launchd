@@ -37,17 +37,13 @@
 		<string>{}</string>
 		<string>\;</string>
 	</array>
-	<key>StartCalendarInterval</key>
-	<dict> 
-		<key>Minute</key>
-		<integer>*</integer>
-	</dict>
-	</array>
+	<key>StartInterval</key>
+	<integer>60</integer>
 <!-- Logging
-        <key>StandardErrorPath</key>
-        <string>/var/log/custom.login.lock.log</string>
-        <key>StandardOutPath</key>
-        <string>/var/log/custom.login.lock.error.log</string>
+    <key>StandardErrorPath</key>
+    <string>/var/log/custom.login.lock.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/log/custom.login.lock.error.log</string>
 -->
 </dict>
 </plist>
