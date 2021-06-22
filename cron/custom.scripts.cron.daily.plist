@@ -6,8 +6,6 @@
 	<string>custom.scripts.cron.daily</string>
 	<key>EnvironmentVariables</key>
 	<dict>
-		<key>PATH</key>
-		<string><!-- output from "echo $PATH" --></string>
 		<key>DIR_CRON</key>
 		<string>/path/to/scripts</string>
 	</dict>
