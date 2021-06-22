@@ -19,11 +19,11 @@
 	</array>
 	<key>StartInterval</key>
 	<integer>60</integer>
-<!-- Logging
+	<!--
     <key>StandardErrorPath</key>
     <string>/var/log/custom.login.lock.log</string>
     <key>StandardOutPath</key>
     <string>/var/log/custom.login.lock.error.log</string>
--->
+	-->
 </dict>
 </plist>

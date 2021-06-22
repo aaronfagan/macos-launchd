@@ -26,11 +26,11 @@
 		<key>Minute</key>
 		<integer>0</integer>
 	</dict>
-<!-- Logging
-        <key>StandardErrorPath</key>
-        <string>/var/log/custom.login.lock.log</string>
-        <key>StandardOutPath</key>
-        <string>/var/log/custom.login.lock.error.log</string>
--->
+	<!--
+	<key>StandardErrorPath</key>
+	<string>/var/log/custom.login.lock.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/custom.login.lock.error.log</string>
+	-->
 </dict>
 </plist>
