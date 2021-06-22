@@ -6,36 +6,16 @@
 	<string>custom.scripts.cron.daily</string>
 	<key>EnvironmentVariables</key>
 	<dict>
+		<key>PATH</key>
+		<string><!-- output from "echo $PATH" --></string>
 		<key>DIR_CRON</key>
 		<string>/path/to/scripts</string>
 	</dict>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/bin/find</string>
-		<string>$DIR_CRON</string>
-		<string>-path</string>
-		<string>$DIR_CRON/_*</string>
-		<string>-prune</string>
-		<string>-o</string>
-		<string>-path</string>
-		<string>$DIR_CRON/dev</string>
-		<string>-prune</string>
-		<string>-o</string>
-		<string>-type</string>
-		<string>f</string>
-		<string>! -iname</string>
-		<string>"_*.sh"</string>
-		<string>-iname</string>
-		<string>"*.sh"</string>
-		<string>-exec</string>
-		<string>chmod</string>
-		<string>+x</string>
-		<string>{}</string>
-		<string>\;</string>
-		<string>-exec</string>
-		<string>bash</string>
-		<string>{}</string>
-		<string>\;</string>
+		<string>/bin/sh</string>
+		<string>-c</string>
+		<string>/usr/bin/find "${DIR_CRON}" -path "${DIR_CRON}/_*" -prune -o -path "${DIR_CRON}/dev" -prune -o -type f ! -iname _*.sh -iname *.sh -exec chmod +x {} \; -exec bash {} \;</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict>
