@@ -37,8 +37,10 @@
 		<string>{}</string>
 		<string>\;</string>
 	</array>
-	<key>StartInterval</key>
-	<integer>60</integer>
+	<key>StartCalendarInterval</key>
+	<array>
+		</dict>
+	</array>
 <!-- Logging
         <key>StandardErrorPath</key>
         <string>/var/log/custom.login.lock.log</string>
