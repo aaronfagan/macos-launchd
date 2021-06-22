@@ -23,7 +23,7 @@ Run the following commands to enable/disable specific configurations:
 ## Check What Is Enabled
 To check what is enabled, `grep` for the `Label` value from your configuration, like this: 
 ```
-launchd list | grep ${LABEL}
+launchctl list | grep ${LABEL}
 ```
 
 # Contributors
