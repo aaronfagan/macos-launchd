@@ -2,26 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Label</key>
-	<string>custom.scripts.cron.minutely</string>
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>DIR_CRON</key>
 		<string>/path/to/scripts</string>
 	</dict>
+	<key>Label</key>
+	<string>custom.scripts.cron.minutely</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/bin/sh</string>
 		<string>-c</string>
-		<string>/usr/bin/find "${DIR_CRON}" -path "${DIR_CRON}/_*" -prune -o -type f ! -iname _*.sh -iname *.sh -exec chmod +x {} \; -exec bash {} \;</string>
+		<string>/usr/bin/find "${DIR_CRON}" -path "${DIR_CRON}/_*" -prune -o -path  "${DIR_CRON}/dev" -prune -o -type f ! -iname _*.sh -iname *.sh -exec chmod +x {} \; -exec bash {} \;</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<dict/>
-	<!--
-    <key>StandardErrorPath</key>
-    <string>/var/log/custom.login.lock.log</string>
-    <key>StandardOutPath</key>
-    <string>/var/log/custom.login.lock.error.log</string>
-	-->
 </dict>
 </plist>
