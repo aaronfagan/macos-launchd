@@ -2,7 +2,7 @@ repository:
   name: 'macos-launchd'
   description: ''
   homepage: ''
-  default_branch: 'master'
+  default_branch: 'main'
   private: false
   has_issues: true
   has_wiki: false
