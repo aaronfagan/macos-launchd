@@ -25,6 +25,3 @@ To check what is enabled, `grep` for the `Label` value from your configuration, 
 ```
 launchctl list | grep ${LABEL}
 ```
-
-# Contributors
-* Aaron Fagan - [Github](https://github.com/aaronfagan), [Website](https://www.aaronfagan.ca/)
